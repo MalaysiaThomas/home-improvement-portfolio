@@ -1,5 +1,40 @@
+:root {
+    --dark-accent-bg: #101015;
+    --primary-font-family: 'Manrope', sans-serif;
+}
+
 body {
-    background-color: black;
+    font-family: var(--primary-font-family);
+}
+
+nav {
+    background-color: #1010164d;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+/* Navbar Styling */
+.hero {
+    height: 99vh;
+    background-color: var(--dark-accent-bg);
     color: white;
-    font-family: "Manrope", sans-serif;
+}
+
+.toggler-light-bg {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.navbar-brand, .nav-link{
+    color: white;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #f5efd4;
+}
+
+.navbar-nav {
+    gap: 20px
 }
